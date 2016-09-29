@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#quartus files we don't need
+.qpf
+.qsf
+db/
+incremental_db/

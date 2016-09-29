@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BCD is
+port(
+inputs : in std_logic_vector(3 downto 0) ; -- inputs A,B,C,D
+display : out std_logic_vector(6 downto 0) -- outputs D0,D1,D2,D3,D4,D5,D6
+);
+end;
+
+ARCHITECTURE Behavioural OF BCD IS
+BEGIN
+	PROCESS(inputs)
+		begin
+			case inputs is
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";
+				when "0000" => display <= "1111110";				
+				when others => display <= "0000000";
+			end case;
+	end process;
+end Behavioural;
