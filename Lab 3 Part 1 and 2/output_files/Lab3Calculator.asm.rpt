@@ -1,6 +1,6 @@
-Assembler report for BCD7SEGPART1
-Fri Sep 30 17:43:08 2016
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Assembler report for Lab3Calculator
+Thu Oct 06 18:59:02 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/HarryM/Documents/GitHub/DigitalDesign/Lab2/output_files/BCD7SEGPART1.sof
+  5. Assembler Device Options: E:/Year 2/Digital Design/Semester 1/Lab/Lab 3 complete/output_files/Lab3Calculator.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Sep 30 17:43:08 2016 ;
-; Revision Name         ; BCD7SEGPART1                          ;
-; Top-level Entity Name ; BCD7Segpart1                          ;
+; Assembler Status      ; Successful - Thu Oct 06 18:59:02 2016 ;
+; Revision Name         ; Lab3Calculator                        ;
+; Top-level Entity Name ; Lab3Calculator                        ;
 ; Family                ; Cyclone III                           ;
 ; Device                ; EP3C16F484C6                          ;
 +-----------------------+---------------------------------------+
@@ -77,39 +77,39 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Generated Files                                                         ;
-+-----------------------------------------------------------------------------------+
-; File Name                                                                         ;
-+-----------------------------------------------------------------------------------+
-; C:/Users/HarryM/Documents/GitHub/DigitalDesign/Lab2/output_files/BCD7SEGPART1.sof ;
-+-----------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                              ;
++----------------------------------------------------------------------------------------+
+; File Name                                                                              ;
++----------------------------------------------------------------------------------------+
+; E:/Year 2/Digital Design/Semester 1/Lab/Lab 3 complete/output_files/Lab3Calculator.sof ;
++----------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/HarryM/Documents/GitHub/DigitalDesign/Lab2/output_files/BCD7SEGPART1.sof ;
-+----------------+--------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                    ;
-+----------------+--------------------------------------------------------------------------------------------+
-; Device         ; EP3C16F484C6                                                                               ;
-; JTAG usercode  ; 0x000C91A1                                                                                 ;
-; Checksum       ; 0x000C91A1                                                                                 ;
-+----------------+--------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/Year 2/Digital Design/Semester 1/Lab/Lab 3 complete/output_files/Lab3Calculator.sof ;
++----------------+-------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                         ;
++----------------+-------------------------------------------------------------------------------------------------+
+; Device         ; EP3C16F484C6                                                                                    ;
+; JTAG usercode  ; 0x000CD43A                                                                                      ;
+; Checksum       ; 0x000CD43A                                                                                      ;
++----------------+-------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Assembler
+Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Sep 30 17:43:07 2016
-Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off BCD7SEGPART1 -c BCD7SEGPART1
+    Info: Processing started: Thu Oct 06 18:59:01 2016
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Lab3Calculator -c Lab3Calculator
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
-Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 375 megabytes
-    Info: Processing ended: Fri Sep 30 17:43:08 2016
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 430 megabytes
+    Info: Processing ended: Thu Oct 06 18:59:02 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

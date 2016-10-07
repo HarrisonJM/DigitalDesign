@@ -1,6 +1,6 @@
-Analysis & Synthesis report for BCD7SEGPART1
-Fri Sep 30 17:43:01 2016
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Analysis & Synthesis report for BehaviouralAdder
+Fri Oct 07 10:26:21 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 30 17:43:01 2016           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; BCD7SEGPART1                                    ;
-; Top-level Entity Name              ; BCD7Segpart1                                    ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 07 10:26:20 2016           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; BehaviouralAdder                                ;
+; Top-level Entity Name              ; BehaviouralAdder                                ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 6                                               ;
-;     Total combinational functions  ; 6                                               ;
+; Total logic elements               ; 26                                              ;
+;     Total combinational functions  ; 26                                              ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 11                                              ;
+; Total pins                         ; 40                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C16F484C6       ;                    ;
-; Top-level entity name                                                      ; BCD7SEGPART1       ; BCD7SEGPART1       ;
+; Top-level entity name                                                      ; BehaviouralAdder   ; BehaviouralAdder   ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,52 +156,56 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
-; BCD7SEGPART1.vhd                 ; yes             ; User VHDL File  ; C:/Users/HarryM/Documents/GitHub/DigitalDesign/Lab2/BCD7SEGPART1.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
+; Decoder.vhd                      ; yes             ; User VHDL File  ; E:/Year 2/Digital Design/Semester 1/Lab/Lab3Part3/Decoder.vhd          ;         ;
+; CalculatorBehav.vhd              ; yes             ; User VHDL File  ; E:/Year 2/Digital Design/Semester 1/Lab/Lab3Part3/CalculatorBehav.vhd  ;         ;
+; BehaviouralAdder.vhd             ; yes             ; User VHDL File  ; E:/Year 2/Digital Design/Semester 1/Lab/Lab3Part3/BehaviouralAdder.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 6       ;
-;                                             ;         ;
-; Total combinational functions               ; 6       ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 2       ;
-;     -- 3 input functions                    ; 4       ;
-;     -- <=2 input functions                  ; 0       ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 6       ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 0       ;
-;     -- Dedicated logic registers            ; 0       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 11      ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-; Maximum fan-out node                        ; D~input ;
-; Maximum fan-out                             ; 6       ;
-; Total fan-out                               ; 38      ;
-; Average fan-out                             ; 1.36    ;
-+---------------------------------------------+---------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                               ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimated Total logic elements              ; 26                          ;
+;                                             ;                             ;
+; Total combinational functions               ; 26                          ;
+; Logic element usage by number of LUT inputs ;                             ;
+;     -- 4 input functions                    ; 21                          ;
+;     -- 3 input functions                    ; 4                           ;
+;     -- <=2 input functions                  ; 1                           ;
+;                                             ;                             ;
+; Logic elements by mode                      ;                             ;
+;     -- normal mode                          ; 23                          ;
+;     -- arithmetic mode                      ; 3                           ;
+;                                             ;                             ;
+; Total registers                             ; 0                           ;
+;     -- Dedicated logic registers            ; 0                           ;
+;     -- I/O registers                        ; 0                           ;
+;                                             ;                             ;
+; I/O pins                                    ; 40                          ;
+; Embedded Multiplier 9-bit elements          ; 0                           ;
+; Maximum fan-out node                        ; CalculatorBehav:CALC|Add0~2 ;
+; Maximum fan-out                             ; 9                           ;
+; Total fan-out                               ; 163                         ;
+; Average fan-out                             ; 1.54                        ;
++---------------------------------------------+-----------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |BCD7Segpart1              ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |BCD7Segpart1       ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; |BehaviouralAdder          ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 40   ; 0            ; |BehaviouralAdder                      ; work         ;
+;    |CalculatorBehav:CALC|  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BehaviouralAdder|CalculatorBehav:CALC ; work         ;
+;    |Decoder:DEC|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BehaviouralAdder|Decoder:DEC          ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -233,29 +237,49 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Sep 30 17:43:00 2016
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BCD7SEGPART1 -c BCD7SEGPART1
+    Info: Processing started: Fri Oct 07 10:26:14 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BehaviouralAdder -c BehaviouralAdder
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file bcd7segpart1.vhd
-    Info (12022): Found design unit 1: BCD7Segpart1-dataflow
-    Info (12023): Found entity 1: BCD7Segpart1
-Info (12021): Found 2 design units, including 1 entities, in source file bcd7segpart2.vhd
-    Info (12022): Found design unit 1: BCD7SEGPART2-Behavioural
-    Info (12023): Found entity 1: BCD7SEGPART2
-Info (12127): Elaborating entity "BCD7SEGPART1" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: Decoder-behavioural
+    Info (12023): Found entity 1: Decoder
+Info (12021): Found 2 design units, including 1 entities, in source file calculatorbehav.vhd
+    Info (12022): Found design unit 1: CalculatorBehav-behavioural
+    Info (12023): Found entity 1: CalculatorBehav
+Info (12021): Found 2 design units, including 1 entities, in source file behaviouraladder.vhd
+    Info (12022): Found design unit 1: BehaviouralAdder-structural
+    Info (12023): Found entity 1: BehaviouralAdder
+Info (12127): Elaborating entity "BehaviouralAdder" for the top level hierarchy
+Info (12128): Elaborating entity "CalculatorBehav" for hierarchy "CalculatorBehav:CALC"
+Warning (10492): VHDL Process Statement warning at CalculatorBehav.vhd(30): signal "aint" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CalculatorBehav.vhd(30): signal "bint" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CalculatorBehav.vhd(31): signal "T" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CalculatorBehav.vhd(38): signal "T" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CalculatorBehav.vhd(38): signal "Z" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CalculatorBehav.vhd(40): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CalculatorBehav.vhd(41): signal "S" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:DEC"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Hex3[0]" is stuck at VCC
+    Warning (13410): Pin "Hex2[0]" is stuck at VCC
+    Warning (13410): Pin "Hex1[0]" is stuck at VCC
+    Warning (13410): Pin "Hex1[1]" is stuck at VCC
+    Warning (13410): Pin "Hex1[5]" is stuck at GND
+    Warning (13410): Pin "Hex1[6]" is stuck at GND
+    Warning (13410): Pin "Hex0[0]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 6 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 397 megabytes
-    Info: Processing ended: Fri Sep 30 17:43:01 2016
-    Info: Elapsed time: 00:00:01
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 26 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 502 megabytes
+    Info: Processing ended: Fri Oct 07 10:26:21 2016
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:01
 
 
