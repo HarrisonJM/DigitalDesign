@@ -1,6 +1,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+--TODO: TIDY UP BY STORING CONSTANTS IN ARRAYS AND THEN LOOP THROUGH
+
 entity Decoder is
 port(
 	sin 	: in std_logic_vector(3 downto 0);
